@@ -10,12 +10,14 @@ import { ReactComponent as Lifetime } from '../images/logo/lifetime.svg';
 import { ReactComponent as Time } from '../images/logo/time.svg';
 import { ReactComponent as Teach } from '../images/logo/teach.svg';
 import { ReactComponent as VideoGroup } from '../images/logo/video.svg';
+import Banner from '../components/Banner';
 
 function App() {
   return (
     <div className="app">
       <Header />
       <div className="app__body">
+        <Banner />
         <div className="app__ads">
           <Ad
             Icon={Video}
@@ -51,6 +53,7 @@ function App() {
             description="Build your library for your career and personal growth"
           />
         </div>
+        <Row title="Students are viewing" />
       </div>
     </div>
   );

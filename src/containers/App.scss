@@ -2,7 +2,7 @@
 
 .app {
   .app__body {
-    width: 86%;
+    width: 88%;
     margin: auto;
   }
   .app__ads {
@@ -10,5 +10,8 @@
     justify-content: space-between;
     border-bottom: 1px solid $clr-card-border;
     padding: 2em 0;
+    .ad:first-of-type {
+      margin-left: 4em;
+    }
   }
 }

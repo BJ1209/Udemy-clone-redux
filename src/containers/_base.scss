@@ -11,6 +11,12 @@ $clr-header-btn-white: #fff;
 $clr-row-title: #3c3b37;
 $clr-row-desc: #73726c;
 
+// Banner styles
+$clr-banner-modal: #fff;
+$clr-banner-modal-title: $clr-row-title;
+$banner-bs: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+$banner-form-border: 1px solid #989586;
+
 // Card base colors
 $clr-card-border: #dcdacb;
 $clr-card-badge-bg: #ffe799;
@@ -21,8 +27,6 @@ $clr-card-noBuys: #73726c;
 // ad colors
 $clr-ad-icon-bg: #f2fbfc;
 $clr-ad-icon: #0f7c90;
-
-$bs-header: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.08);
 
 $br-btn: 4px;
 

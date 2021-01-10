@@ -1,0 +1,47 @@
+@import "../containers/base";
+.banner {
+  position: relative;
+  background-image: url(../images/Banner1.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  .banner__modal {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    background: $clr-banner-modal;
+    padding: 1.5em;
+    width: 450px;
+    box-shadow: $banner-bs;
+    h1 {
+      color: $clr-banner-modal-title;
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.18rem;
+      margin-bottom: 0.5em;
+      color: $clr-banner-modal-title;
+    }
+    .banner__form {
+      display: flex;
+      border: $banner-form-border;
+      border-radius: $br-btn;
+      overflow: hidden;
+      input {
+        flex: 1;
+        outline: none;
+        border: none;
+        padding-left: 1em;
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
+      button {
+        outline: none;
+        border: none;
+        background: transparent;
+        padding: 0.8em;
+        cursor: pointer;
+      }
+    }
+  }
+}
