@@ -1,0 +1,27 @@
+@import "../containers/base";
+.ad {
+  @include flex;
+  .ad__icon {
+    @include grid;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background: $clr-ad-icon-bg;
+    margin-right: 1em;
+    svg {
+      fill: $clr-ad-icon;
+      object-fit: contain;
+      height: 1.25em;
+    }
+  }
+  .ad__info {
+    color: $clr-row-title;
+    .ad__title {
+      font-size: 1rem;
+    }
+    .ad__description {
+      font-size: 0.9rem;
+      width: 260px;
+    }
+  }
+}

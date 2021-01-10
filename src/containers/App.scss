@@ -1,0 +1,14 @@
+@import "../containers/base";
+
+.app {
+  .app__body {
+    width: 86%;
+    margin: auto;
+  }
+  .app__ads {
+    @include flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $clr-card-border;
+    padding: 2em 0;
+  }
+}

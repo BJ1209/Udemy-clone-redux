@@ -1,0 +1,39 @@
+@import "../containers/base";
+
+.row {
+  & > h3 {
+    font-size: 1.6rem;
+    color: $clr-row-title;
+    margin: 0.5em 0 0.3em;
+  }
+  & > p {
+    color: $clr-row-desc;
+    font-size: 0.95rem;
+    margin: 0.5em 0 1.5em;
+  }
+  .row__buttons {
+    @include flex;
+    gap: 1.5em;
+    box-shadow: inset 0 -1px 0 0 #dcdacb;
+    margin-bottom: 1em;
+    .row__btn {
+      padding: 0.9em 0.5em;
+      font-size: 0.95rem;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-weight: 700;
+      color: darken($clr-row-desc, 15%);
+      cursor: pointer;
+    }
+    .row__btn.selected {
+      border-bottom: 2px solid #000;
+    }
+  }
+  .row__cards {
+    @include flex;
+    border-bottom: 1px solid $clr-card-border;
+    gap: 1.1em;
+    padding-bottom: 1em;
+  }
+}

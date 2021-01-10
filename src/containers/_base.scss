@@ -1,0 +1,40 @@
+$clr-udemy: #675c55;
+
+// header colors
+$clr-header-text: #3c3b37;
+$clr-header-quantity: #ec5252;
+$clr-header-btn: #0f7c90;
+$clr-header-btn-hover: #094c59;
+$clr-header-btn-white: #fff;
+
+// Row base colors
+$clr-row-title: #3c3b37;
+$clr-row-desc: #73726c;
+
+// Card base colors
+$clr-card-border: #dcdacb;
+$clr-card-badge-bg: #ffe799;
+$clr-card-badge: #593d00;
+$clr-card-title: $clr-row-title;
+$clr-card-noBuys: #73726c;
+
+// ad colors
+$clr-ad-icon-bg: #f2fbfc;
+$clr-ad-icon: #0f7c90;
+
+$bs-header: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.08);
+
+$br-btn: 4px;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin grid {
+  display: grid;
+  place-items: center;
+}
+@mixin flexColumn {
+  @include flex;
+  flex-direction: column;
+}

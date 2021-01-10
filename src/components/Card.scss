@@ -1,0 +1,86 @@
+@import "../containers/base";
+
+.card {
+  @include flexColumn;
+  flex-wrap: wrap;
+  overflow: hidden;
+  min-width: 220px;
+  max-width: 250px;
+  height: 300px;
+  cursor: pointer;
+  &:hover {
+    .card__image {
+      .card__imageWrapper {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+      }
+    }
+  }
+  .card__image {
+    position: relative;
+    border: 1px solid $clr-card-border;
+    border-radius: $br-btn;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .card__imageWrapper {
+      transition: all 150ms ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+  }
+  .card__info {
+    padding: 0.2em;
+    h3 {
+      font-weight: 700;
+      font-size: 1rem;
+      color: $clr-card-title;
+      margin-bottom: -0.3em;
+    }
+    small {
+      font-size: 0.72rem;
+      color: $clr-card-noBuys;
+      display: inline-block;
+    }
+    .card__starContainer {
+      @include flex;
+      .card__rating {
+        color: $clr-card-badge;
+      }
+      .card__star {
+        font-size: 0.7rem;
+        margin-right: 0.5em;
+      }
+      .card__noBuys {
+        font-size: 0.8rem;
+        color: $clr-card-noBuys;
+      }
+    }
+    .card__price {
+      margin: 0em 0 0.2em;
+      .card__currentPrice {
+        color: $clr-card-title;
+      }
+      .card__originalPrice {
+        margin-left: 0.5em;
+        color: $clr-card-noBuys;
+        text-decoration: line-through;
+        font-size: 0.85rem;
+      }
+    }
+    .card__badge {
+      background: $clr-card-badge-bg;
+      color: $clr-card-badge;
+      font-weight: 700;
+      display: inline-block;
+      padding: 0.2em 0.4em 0.25em;
+      font-size: 0.8rem;
+      border-radius: $br-btn;
+    }
+  }
+}
