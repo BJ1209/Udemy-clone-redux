@@ -3,6 +3,7 @@ import './App.scss';
 import Header from '../components/Header';
 import Row from '../components/Row';
 import Ad from '../components/Ad';
+import Banner from '../components/Banner';
 
 import { ReactComponent as Video } from '../images/logo/yt.svg';
 import { ReactComponent as Certificate } from '../images/logo/certificate.svg';
@@ -10,7 +11,14 @@ import { ReactComponent as Lifetime } from '../images/logo/lifetime.svg';
 import { ReactComponent as Time } from '../images/logo/time.svg';
 import { ReactComponent as Teach } from '../images/logo/teach.svg';
 import { ReactComponent as VideoGroup } from '../images/logo/video.svg';
-import Banner from '../components/Banner';
+
+const buttonRow = (
+  <Row
+    button
+    title="The world's largest selection of courses"
+    description="Choose from 130,000 online video courses with new additions published every month"
+  />
+);
 
 function App() {
   return (
@@ -22,20 +30,16 @@ function App() {
           <Ad
             Icon={Video}
             title="130,000 online courses"
-            description="Enjoy a variety of fresh topics"
+            description="Enjoy a variety of fresh topics."
           />
           <Ad
             Icon={Certificate}
             title="Expert instruction"
-            description="Find the right instructor for you"
+            description="Find the right instructor for you."
           />
-          <Ad Icon={Lifetime} title="Lifetime access" description="Learn on your schedule" />
+          <Ad Icon={Lifetime} title="Lifetime access" description="Learn on your schedule." />
         </div>
-        <Row
-          button
-          title="The world's largest selection of courses"
-          description="Choose from 130,000 online video courses with new additions published every month"
-        />
+        {buttonRow}
         <div className="app__ads">
           <Ad
             Icon={Time}
@@ -53,7 +57,7 @@ function App() {
             description="Build your library for your career and personal growth"
           />
         </div>
-        <Row title="Students are viewing" />
+        <Row title="Students are also viewing" data />
       </div>
     </div>
   );

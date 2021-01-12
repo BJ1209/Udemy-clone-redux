@@ -1,0 +1,21 @@
+@import "../containers/base";
+.category {
+  background: $clr-category-bg;
+  @include flex;
+  justify-content: space-between;
+  padding: 1.5em 4em;
+  margin-bottom: 1.5em;
+  .category__info {
+    width: 650px;
+    .category__title {
+      font-size: 1.05rem;
+    }
+    .category__description {
+      font-size: 0.95rem;
+      margin-top: 0.5em;
+    }
+  }
+  .category__image {
+    border-radius: 50%;
+  }
+}
