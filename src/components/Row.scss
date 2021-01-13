@@ -1,6 +1,7 @@
 @import "../containers/base";
 
 .row {
+  @include center;
   & > h3 {
     font-size: 1.6rem;
     color: $clr-row-title;
@@ -33,7 +34,6 @@
   }
   .row__cards {
     @include flex;
-    border-bottom: 1px solid $clr-card-border;
     gap: 1.1em;
     padding-bottom: 1em;
   }

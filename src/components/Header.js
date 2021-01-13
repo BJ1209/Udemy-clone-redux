@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ReactComponent as CartSvg } from '../images/logo/cart.svg';
 import { ReactComponent as Search } from '../images/logo/search.svg';
 import UdemyLogo from '../images/logo/udemy.svg';
@@ -9,7 +10,9 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <img src={UdemyLogo} alt="logo" className="header__logo" />
+      <Link to="/">
+        <img src={UdemyLogo} alt="logo" className="header__logo" />
+      </Link>
       <div className="header__search">
         <p>Categories</p>
         <form className="header__searchbar" onSubmit={submitHandler}>

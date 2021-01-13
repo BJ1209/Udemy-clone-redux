@@ -2,63 +2,38 @@ import { Counter } from '../features/counter/Counter';
 import './App.scss';
 import Header from '../components/Header';
 import Row from '../components/Row';
-import Ad from '../components/Ad';
 import Banner from '../components/Banner';
+import Facility from '../components/Facility';
+import { adTop, adBottom, buttonRow, companies } from '../utils/customComponents';
+import { Route, Switch, useParams } from 'react-router-dom';
+import Course from '../components/Course/Course';
 
-import { ReactComponent as Video } from '../images/logo/yt.svg';
-import { ReactComponent as Certificate } from '../images/logo/certificate.svg';
-import { ReactComponent as Lifetime } from '../images/logo/lifetime.svg';
-import { ReactComponent as Time } from '../images/logo/time.svg';
-import { ReactComponent as Teach } from '../images/logo/teach.svg';
-import { ReactComponent as VideoGroup } from '../images/logo/video.svg';
-
-const buttonRow = (
-  <Row
-    button
-    title="The world's largest selection of courses"
-    description="Choose from 130,000 online video courses with new additions published every month"
-  />
+const mainApp = (
+  <>
+    <div className="app__body">
+      <Banner />
+      <div className="app__ads">{adTop}</div>
+      {buttonRow}
+      <div className="app__ads">{adBottom}</div>
+      <Row title="Students are also viewing" data />
+      <Facility instructor />
+      {companies}
+      <Facility buisness />
+    </div>
+  </>
 );
-
 function App() {
   return (
     <div className="app">
       <Header />
-      <div className="app__body">
-        <Banner />
-        <div className="app__ads">
-          <Ad
-            Icon={Video}
-            title="130,000 online courses"
-            description="Enjoy a variety of fresh topics."
-          />
-          <Ad
-            Icon={Certificate}
-            title="Expert instruction"
-            description="Find the right instructor for you."
-          />
-          <Ad Icon={Lifetime} title="Lifetime access" description="Learn on your schedule." />
-        </div>
-        {buttonRow}
-        <div className="app__ads">
-          <Ad
-            Icon={Time}
-            title="Go at your own pace"
-            description="Enjoy lifetime access to courses on Udemy’s website and app"
-          />
-          <Ad
-            Icon={Teach}
-            title="Learn from industry experts"
-            description="Select from top instructors around the world"
-          />
-          <Ad
-            Icon={VideoGroup}
-            title="Find video courses on almost any topic"
-            description="Build your library for your career and personal growth"
-          />
-        </div>
-        <Row title="Students are also viewing" data />
-      </div>
+      <Switch>
+        <Route path="/course/:courseId">
+          <Course />
+        </Route>
+        <Route exact path="/">
+          {mainApp}
+        </Route>
+      </Switch>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router-dom';
 import './Card.scss';
 
 const Card = (props) => {
@@ -13,8 +14,10 @@ const Card = (props) => {
     bestSeller,
   } = props.data;
 
+  const history = useHistory();
+
   return (
-    <div className="card">
+    <div className="card" onClick={() => history.push(`/course/${id}`)}>
       <div className="card__image">
         <div className="card__imageWrapper"></div>
         <img src={imageURL} alt={title} />

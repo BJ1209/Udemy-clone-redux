@@ -45,3 +45,7 @@ $br-btn: 4px;
   @include flex;
   flex-direction: column;
 }
+@mixin center {
+  width: 88%;
+  margin: 0 auto;
+}

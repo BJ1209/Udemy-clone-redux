@@ -2,16 +2,35 @@
 
 .app {
   .app__body {
-    width: 88%;
     margin: auto;
   }
   .app__ads {
     @include flex;
+    @include center;
     justify-content: space-between;
     border-bottom: 1px solid $clr-card-border;
-    padding: 2em 0;
+    border-top: 1px solid $clr-card-border;
+    padding: 2.5em 0;
     .ad:first-of-type {
       margin-left: 4em;
+    }
+  }
+  .app__companies {
+    @include flex;
+    @include center;
+    flex-direction: column;
+    border-bottom: 1px solid $clr-card-border;
+    border-top: 1px solid $clr-card-border;
+    padding: 2.5em 0;
+    h3 {
+      color: $clr-row-title;
+      font-size: 1.6rem;
+      margin-bottom: 1em;
+    }
+    .app__logos {
+      @include flex;
+      gap: 1.5em;
+      padding: 1xem;
     }
   }
 }
