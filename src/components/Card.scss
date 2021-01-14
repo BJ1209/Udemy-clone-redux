@@ -2,7 +2,6 @@
 
 .card {
   @include flexColumn;
-  flex-wrap: wrap;
   overflow: hidden;
   min-width: 220px;
   max-width: 250px;
@@ -74,13 +73,7 @@
       }
     }
     .card__badge {
-      background: $clr-card-badge-bg;
-      color: $clr-card-badge;
-      font-weight: 700;
-      display: inline-block;
-      padding: 0.2em 0.4em 0.25em;
-      font-size: 0.8rem;
-      border-radius: $br-btn;
+      @include bestSeller;
     }
   }
 }

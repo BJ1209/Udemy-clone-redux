@@ -14,7 +14,7 @@ const Course = () => {
     const data = coursesData.filter((course) => course.id === parseInt(courseId));
     setData(data[0]);
     setLoading(false);
-  }, []);
+  }, [courseId]);
 
   return !loading ? (
     <div className="course">

@@ -57,6 +57,7 @@ const Facility = ({ instructor, buisness }) => {
       </div>
     </>
   );
+
   return (
     <Div className="facility">
       <div className="facility__data">

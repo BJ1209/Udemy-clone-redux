@@ -1,0 +1,76 @@
+@import "../../containers/base";
+
+.courseHeader {
+  background: $clr-course-header-bg;
+  padding: 2em 4em;
+  .courseHeader__container {
+    @include flexColumn;
+    width: 60%;
+    color: $clr-course-header-text;
+    h2 {
+      font-size: 2rem;
+    }
+    & > p {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin-top: 0.2em;
+    }
+    & > div {
+      @include flex;
+    }
+    .courseHeader__info {
+      align-self: stretch;
+      margin: 0.5em 0 0;
+      .courseHeader__badge {
+        @include bestSeller;
+        margin-right: 0.8em;
+      }
+      .courseHeader__rating {
+        color: $clr-card-badge-bg;
+      }
+      .courseHeader__starContainer {
+        font-size: 0.75rem;
+        & > span {
+          margin: 0 0.3em;
+        }
+      }
+    }
+    .courseHeader__owner {
+      font-size: 0.8rem;
+      align-self: stretch;
+      margin: 0.4em 0 0.5em;
+      span {
+        margin: 0em 0.3em;
+      }
+    }
+    // .courseHeader__language {
+    //   display: flex;
+    //   align-self: stretch;
+    //   svg {
+    //     fill: #fff;
+    //   }
+    // }
+    .courseHeader__buttons {
+      align-self: stretch;
+      gap: 0.5em;
+      margin-top: 0.2em;
+      button {
+        font-size: 0.9rem;
+        padding: 0.7em 1em 0.5em;
+        font-weight: 700;
+        color: $clr-course-header-text;
+        background: transparent;
+        border: 1px solid $clr-course-header-text;
+        border-radius: $br-btn;
+        outline: none;
+        cursor: pointer;
+        @include flex;
+        svg {
+          fill: #fff;
+          margin-left: 0.4em;
+          height: 1.2em;
+        }
+      }
+    }
+  }
+}
