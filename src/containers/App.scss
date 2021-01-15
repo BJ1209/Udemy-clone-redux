@@ -1,8 +1,12 @@
 @import "../containers/base";
 
 .app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   .app__body {
     margin: auto;
+    flex: 1;
   }
   .app__ads {
     @include flex;

@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import CourseTop from './CourseTop';
 import CourseHeader from './CourseHeader';
+import './Course.scss';
+
 import coursesData from '../../data/courses';
 import { ClipLoader } from 'react-spinners';
-import './Course.scss';
+import { ReactComponent as Tick } from '../../images/logo/tick.svg';
+
 const Course = () => {
   const { courseId } = useParams();
   const [loading, setLoading] = useState(false);
@@ -16,13 +20,34 @@ const Course = () => {
     setLoading(false);
   }, [courseId]);
 
-  return !loading ? (
+  console.log(data);
+  return (
     <div className="course">
-      <CourseHeader data={data} />
-    </div>
-  ) : (
-    <div className="couse__loader">
-      <ClipLoader loading={loading} />
+      {!loading ? (
+        <>
+          <CourseHeader data={data} />
+          <CourseTop data={data} />
+          <div className="course__body">
+            <div className="course__left">
+              <h3>What you'll learn</h3>
+              <div className="course__points">
+                <ul>
+                  {data?.learn?.map((point, index) => (
+                    <li key={index}>
+                      <Tick />
+                      <p>{point}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : (
+        <div className="course__loader">
+          <ClipLoader loading={loading} size={60} color="#3c3b37" />
+        </div>
+      )}
     </div>
   );
 };

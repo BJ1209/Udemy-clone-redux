@@ -4,6 +4,7 @@
   @include flex;
   padding: 0.8em;
   background: white;
+  z-index: 100;
   .header__logo {
     object-fit: contain;
     height: 1.95em;

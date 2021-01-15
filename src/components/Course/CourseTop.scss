@@ -1,0 +1,68 @@
+@import "../../containers/base";
+
+.courseTop {
+  background: $clr-course-header-bg;
+  padding: 2em 14em 3em;
+  .courseTop__container {
+    @include flexColumn;
+    width: 65%;
+    color: $clr-course-header-text;
+    h2 {
+      font-size: 2.1em;
+    }
+    & > p {
+      align-self: stretch;
+      width: 80%;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-top: 0.2em;
+    }
+    & > div {
+      @include flex;
+    }
+    .courseTop__owner {
+      font-size: 0.8rem;
+      align-self: stretch;
+      margin: 0.4em 0 0.3em;
+      span {
+        margin: 0em 0.3em;
+      }
+    }
+    .courseTop__language {
+      @include flex;
+      align-self: stretch;
+      margin-bottom: 0.1em;
+      svg {
+        fill: #fff;
+        object-fit: contain;
+        height: 1.1em;
+        margin-right: 0.5em;
+      }
+      p {
+        padding-bottom: 0.2em;
+      }
+    }
+    .courseTop__buttons {
+      align-self: stretch;
+      gap: 0.5em;
+      margin-top: 0.2em;
+      button {
+        font-size: 0.9rem;
+        padding: 0.7em 1em 0.5em;
+        font-weight: 700;
+        color: $clr-course-header-text;
+        background: transparent;
+        border: 1px solid $clr-course-header-text;
+        border-radius: $br-btn;
+        outline: none;
+        cursor: pointer;
+        @include flex;
+        svg {
+          fill: #fff;
+          margin-left: 0.4em;
+          height: 1.2em;
+        }
+      }
+    }
+  }
+}
