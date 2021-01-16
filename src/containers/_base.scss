@@ -39,6 +39,13 @@ $clr-course-header-text: #fff;
 $clr-course-learning-bg: #fbfbf8;
 $course-learning-border: 1px solid #dcdacb;
 
+// corse card styles
+$clr-coursecard-button-red: $clr-header-quantity;
+$clr-coursecard-button-red-hover: #e61b1b;
+$clr-coursecard-button: #fff;
+$clr-coursecard-button-blue: $clr-header-btn;
+$clr-coursecard-button-icon: $clr-card-noBuys;
+
 $br-btn: 4px;
 
 @mixin flex {
@@ -59,14 +66,4 @@ $br-btn: 4px;
 @mixin center {
   width: 88%;
   margin: 0 auto;
-}
-
-@mixin bestSeller {
-  background: $clr-card-badge-bg;
-  color: $clr-card-badge;
-  font-weight: 700;
-  display: inline-block;
-  padding: 0.2em 0.4em 0.25em;
-  font-size: 0.8rem;
-  border-radius: $br-btn;
 }

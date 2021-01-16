@@ -7,6 +7,7 @@ import './Course.scss';
 import coursesData from '../../data/courses';
 import { ClipLoader } from 'react-spinners';
 import { ReactComponent as Tick } from '../../images/logo/tick.svg';
+import CourseCard from './CourseCard';
 
 const Course = () => {
   const { courseId } = useParams();
@@ -29,18 +30,29 @@ const Course = () => {
           <CourseTop data={data} />
           <div className="course__body">
             <div className="course__left">
-              <h3>What you'll learn</h3>
-              <div className="course__points">
+              <div className="course__includes">
+                <h3>What you'll learn</h3>
+                <div className="course__points">
+                  <ul>
+                    {data?.learn?.map((point, index) => (
+                      <li key={index}>
+                        <Tick />
+                        <p>{point}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="course__audience">
+                <h3>Who this course is for: </h3>
                 <ul>
-                  {data?.learn?.map((point, index) => (
-                    <li key={index}>
-                      <Tick />
-                      <p>{point}</p>
-                    </li>
+                  {data?.audience?.map((point, index) => (
+                    <li key={index}>{point}</li>
                   ))}
                 </ul>
               </div>
             </div>
+            <CourseCard data={data} />
           </div>
         </>
       ) : (

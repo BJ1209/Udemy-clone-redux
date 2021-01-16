@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router-dom';
 import './Card.scss';
+import '../containers/sharedClasses.scss';
 
 const Card = (props) => {
   const {
@@ -38,7 +39,7 @@ const Card = (props) => {
           </span>
           <span className="card__originalPrice">&#8377;{orgPrice}</span>
         </p>
-        {bestSeller ? <div className="card__badge">Bestseller</div> : null}
+        {bestSeller ? <div className="bestSeller">Bestseller</div> : null}
       </div>
     </div>
   );

@@ -3,35 +3,54 @@
   position: relative;
   flex: 1;
   .course__body {
+    display: flex;
+    margin: 2em 10em;
+    gap: 6em;
     .course__left {
-      background: $clr-course-learning-bg;
-      border: $course-learning-border;
-      margin: 2em 14em;
-      width: 45%;
-      border-radius: $br-btn;
-      padding: 1.5em 2em;
-      h3 {
-        margin-bottom: 0.5em;
-        font-size: 1.75rem;
-        color: $clr-row-title;
-      }
-      ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8em;
-        li {
-          @include flex;
-          svg {
-            fill: #76726c;
-            object-fit: contain;
-            height: 1.2em;
-            margin-right: 0.8em;
+      flex: 0.6;
+      .course__includes {
+        background: $clr-course-learning-bg;
+        border: $course-learning-border;
+        width: 100%;
+        border-radius: $br-btn;
+        padding: 1.5em 2em;
+        height: fit-content;
+        h3 {
+          margin-bottom: 0.5em;
+          font-size: 1.75rem;
+          color: $clr-row-title;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8em;
+          li {
+            @include flex;
+            svg {
+              fill: #76726c;
+              object-fit: contain;
+              height: 1.2em;
+              margin-right: 0.8em;
+            }
+            p {
+              display: inline-block;
+              width: 240px;
+              font-size: 0.9rem;
+            }
           }
-          p {
-            display: inline-block;
-            width: 240px;
-            font-size: 0.9rem;
+        }
+      }
+      .course__audience {
+        padding: 1em 2em;
+        color: $clr-row-title;
+        h3 {
+          font-size: 1.75rem;
+        }
+        ul {
+          margin: 0.5em 1em;
+          li {
+            font-size: 0.95rem;
           }
         }
       }
