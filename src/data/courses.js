@@ -392,6 +392,10 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This Microsoft Excel courses will take you through 4 levels of Microsoft Excel topics (Beginner, Intermediate, Advanced and Macros/VBA).',
+      'If your looking to take your Excel skills from beginner to advanced level and beyond, then this course is for you.',
+    ],
   },
   {
     id: 107,
@@ -443,6 +447,10 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'This Microsoft Excel courses will take you through 4 levels of Microsoft Excel topics (Beginner, Intermediate, Advanced and Macros/VBA).',
+      'If your looking to take your Excel skills from beginner to advanced level and beyond, then this course is for you.',
     ],
   },
   {
@@ -496,6 +504,10 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This Microsoft Excel courses will take you through 4 levels of Microsoft Excel topics (Beginner, Intermediate, Advanced and Macros/VBA).',
+      'If your looking to take your Excel skills from beginner to advanced level and beyond, then this course is for you.',
+    ],
   },
   {
     id: 109,
@@ -548,6 +560,10 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This Microsoft Excel courses will take you through 4 levels of Microsoft Excel topics (Beginner, Intermediate, Advanced and Macros/VBA).',
+      'If your looking to take your Excel skills from beginner to advanced level and beyond, then this course is for you.',
+    ],
   },
   {
     id: 110,
@@ -599,6 +615,10 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'This Microsoft Excel courses will take you through 4 levels of Microsoft Excel topics (Beginner, Intermediate, Advanced and Macros/VBA).',
+      'If your looking to take your Excel skills from beginner to advanced level and beyond, then this course is for you.',
     ],
   },
   {
@@ -659,6 +679,12 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This course is for anyone who wants to learn about web development, regardless of previous experience',
+      "It's perfect for complete beginners with zero experience",
+      "It's also great for anyone who does have some experience in a few of the technologies(like HTML and CSS) but not all",
+      'If you want to take ONE COURSE to learn everything you need to know about web development, take this course',
+    ],
   },
   {
     id: 112,
@@ -717,6 +743,12 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'This course is for anyone who wants to learn about web development, regardless of previous experience',
+      "It's perfect for complete beginners with zero experience",
+      "It's also great for anyone who does have some experience in a few of the technologies(like HTML and CSS) but not all",
+      'If you want to take ONE COURSE to learn everything you need to know about web development, take this course',
     ],
   },
   {
@@ -777,6 +809,12 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This course is for anyone who wants to learn about web development, regardless of previous experience',
+      "It's perfect for complete beginners with zero experience",
+      "It's also great for anyone who does have some experience in a few of the technologies(like HTML and CSS) but not all",
+      'If you want to take ONE COURSE to learn everything you need to know about web development, take this course',
+    ],
   },
   {
     id: 114,
@@ -835,6 +873,12 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'This course is for anyone who wants to learn about web development, regardless of previous experience',
+      "It's perfect for complete beginners with zero experience",
+      "It's also great for anyone who does have some experience in a few of the technologies(like HTML and CSS) but not all",
+      'If you want to take ONE COURSE to learn everything you need to know about web development, take this course',
     ],
   },
   {
@@ -895,6 +939,12 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'This course is for anyone who wants to learn about web development, regardless of previous experience',
+      "It's perfect for complete beginners with zero experience",
+      "It's also great for anyone who does have some experience in a few of the technologies(like HTML and CSS) but not all",
+      'If you want to take ONE COURSE to learn everything you need to know about web development, take this course',
+    ],
   },
   {
     id: 116,
@@ -947,6 +997,13 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'Take this course if you want to gain a true and deep understanding of JavaScript',
+      "Take this course if you have been trying to learn JavaScript but: 1) still don't really understand JavaScript, or 2) still don't feel confident to code real apps",
+      "Take this course if you're interested in using a library/framework like React, Angular, Vue or Node in the future",
+      'Take this course if you already know JavaScript and are looking for an advanced course. This course includes expert topics!',
+      'Take this course if you want to get started with programming: JavaScript is a great first language!',
     ],
   },
   {
@@ -1001,6 +1058,13 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'Take this course if you want to gain a true and deep understanding of JavaScript',
+      "Take this course if you have been trying to learn JavaScript but: 1) still don't really understand JavaScript, or 2) still don't feel confident to code real apps",
+      "Take this course if you're interested in using a library/framework like React, Angular, Vue or Node in the future",
+      'Take this course if you already know JavaScript and are looking for an advanced course. This course includes expert topics!',
+      'Take this course if you want to get started with programming: JavaScript is a great first language!',
+    ],
   },
   {
     id: 118,
@@ -1052,6 +1116,13 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'Take this course if you want to gain a true and deep understanding of JavaScript',
+      "Take this course if you have been trying to learn JavaScript but: 1) still don't really understand JavaScript, or 2) still don't feel confident to code real apps",
+      "Take this course if you're interested in using a library/framework like React, Angular, Vue or Node in the future",
+      'Take this course if you already know JavaScript and are looking for an advanced course. This course includes expert topics!',
+      'Take this course if you want to get started with programming: JavaScript is a great first language!',
     ],
   },
   {
@@ -1106,6 +1177,13 @@ const data = [
         title: 'Certificate of completion',
       },
     ],
+    audience: [
+      'Take this course if you want to gain a true and deep understanding of JavaScript',
+      "Take this course if you have been trying to learn JavaScript but: 1) still don't really understand JavaScript, or 2) still don't feel confident to code real apps",
+      "Take this course if you're interested in using a library/framework like React, Angular, Vue or Node in the future",
+      'Take this course if you already know JavaScript and are looking for an advanced course. This course includes expert topics!',
+      'Take this course if you want to get started with programming: JavaScript is a great first language!',
+    ],
   },
   {
     id: 120,
@@ -1158,6 +1236,13 @@ const data = [
         Icon: Certificate,
         title: 'Certificate of completion',
       },
+    ],
+    audience: [
+      'Take this course if you want to gain a true and deep understanding of JavaScript',
+      "Take this course if you have been trying to learn JavaScript but: 1) still don't really understand JavaScript, or 2) still don't feel confident to code real apps",
+      "Take this course if you're interested in using a library/framework like React, Angular, Vue or Node in the future",
+      'Take this course if you already know JavaScript and are looking for an advanced course. This course includes expert topics!',
+      'Take this course if you want to get started with programming: JavaScript is a great first language!',
     ],
   },
 ];

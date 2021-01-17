@@ -46,6 +46,11 @@ $clr-coursecard-button: #fff;
 $clr-coursecard-button-blue: $clr-header-btn;
 $clr-coursecard-button-icon: $clr-card-noBuys;
 
+// Cart styles
+$cart-padding: 3em 12em;
+$clr-cart-top-bg: #505763;
+$clr-cart-top-text: #fff;
+
 $br-btn: 4px;
 
 @mixin flex {

@@ -15,6 +15,7 @@ const buttonRow = (
     description="Choose from 130,000 online video courses with new additions published every month"
   />
 );
+
 const companies = (
   <div className="app__companies">
     <h3>Trusted by companies of all sizes</h3>
@@ -62,6 +63,7 @@ const companies = (
     </div>
   </div>
 );
+
 const adTop = (
   <>
     {' '}
@@ -78,6 +80,7 @@ const adTop = (
     <Ad Icon={Lifetime} title="Lifetime access" description="Learn on your schedule." />
   </>
 );
+
 const adBottom = (
   <>
     <Ad

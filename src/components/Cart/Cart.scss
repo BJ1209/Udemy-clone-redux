@@ -1,0 +1,15 @@
+@import "../../containers/base";
+.cart {
+  .cart__top {
+    background: $clr-cart-top-bg;
+    color: $clr-cart-top-text;
+    padding: $cart-padding;
+    h3 {
+      font-size: 2.1rem;
+      font-weight: normal;
+    }
+  }
+  .cart__info {
+    padding: $cart-padding;
+  }
+}

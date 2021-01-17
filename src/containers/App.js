@@ -1,12 +1,12 @@
-import { Counter } from '../features/counter/Counter';
 import './App.scss';
 import Header from '../components/Header';
 import Row from '../components/Row';
 import Banner from '../components/Banner';
 import Facility from '../components/Facility';
+import Cart from '../components/Cart/Cart';
+import Course from '../components/Course/Course';
 import { adTop, adBottom, buttonRow, companies } from '../utils/customComponents';
 import { Route, Switch, useParams } from 'react-router-dom';
-import Course from '../components/Course/Course';
 
 const mainApp = (
   <>
@@ -27,6 +27,9 @@ function App() {
     <div className="app">
       <Header />
       <Switch>
+        <Route path="/cart">
+          <Cart />
+        </Route>
         <Route path="/course/:courseId">
           <Course />
         </Route>

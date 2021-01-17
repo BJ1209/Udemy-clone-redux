@@ -4,11 +4,25 @@
   flex: 0.33;
   background: #fff;
   box-shadow: $banner-bs;
-  margin-top: -22em;
+  margin-top: -18em;
   border-radius: $br-btn;
   overflow: hidden;
   height: fit-content;
   min-width: 280px;
+  &.show {
+    position: sticky;
+    top: 1em;
+    z-index: 101;
+    animation: show 350ms forwards ease-in-out;
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .courseCard__image {
     width: 99.5%;
     border-radius: $br-btn;
